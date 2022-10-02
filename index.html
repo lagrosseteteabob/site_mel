@@ -24,14 +24,14 @@
 
         <section>
             <div class="sec-contenaire">
-                <div class="from-wrapper">
+                <div class="form-wrapper">
                     <div class="card">
                         <div class="card-header">
                             <div id="forLOgin" class="form-header active">Se connecter</div>
                             <div id="forRegister" class="form-header">S'inscrire</div>
                         </div>
-                        <div class="card-body" id="form-contenaire">
-                            <form id=""formLogin>
+                        <div class="card-body" id="formContenaire">
+                            <form id="formLogin">
                                 <input type="text" class="form-control" placeholder="@utilisateur">
                                 <input type="text" class="form-control" placeholder="@motdepasse">
                                 <button class="formButton">Connexion</button>
@@ -48,6 +48,26 @@
             </div>
         </section>
     </div>
-    coucou
+    <script>
+
+        const displayfrom = _("displayfrom");
+        const forLOgin = _("forLOgin");
+        const loginform = _("formLogin");
+        const forRegister = _("forRegister");
+        const formRegister= _("formRegister");
+        const formContenaire= _("formContenaire");
+
+        displayfrom.addEventListener("click", showform)
+
+
+        function _(e) {
+            return document.getElementById(e);
+        }
+
+        function showform(){
+            document.querySelector(".form-wrapper .card").classList.toggle("show")
+        }
+
+    </script>
 </body>
 </html>
