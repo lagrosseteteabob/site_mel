@@ -70,6 +70,17 @@
             }
         });
 
+        forLOgin.addEventListener("click", () =>{
+            forRegister.classList.remove("active");
+            forLOgin.classList.add("active");
+            if(loginform.classList.contains("toggleForm")){
+                formContenaire.style.transform = "translate(0%)";
+                formContenaire.style.transition = "transform .5s";
+                loginform.classList.remove("toggleForm");
+                Registerform.classList.add("toggleForm");
+            }
+        })
+
 
         function _(e) {
             return document.getElementById(e);
