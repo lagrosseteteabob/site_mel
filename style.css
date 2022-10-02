@@ -143,3 +143,17 @@ form{
 .form-control::placeholder{
     color: rgb(134 255 249 /65%);
 }
+
+.formButton{
+    border:1px solid transparent;
+    padding: 1rem 3rem;
+    background-color: #94f7e6;
+    border-radius: 50px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transition: transform .3, box-shadow .3s;
+}
+.formButton:hover{
+    box-shadow: 3px 5px 15px #94f7e6;
+    transform: translateY(-5px);
+}
