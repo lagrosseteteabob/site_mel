@@ -54,10 +54,21 @@
         const forLOgin = _("forLOgin");
         const loginform = _("formLogin");
         const forRegister = _("forRegister");
-        const formRegister= _("formRegister");
+        const Registerform= _("formRegister");
         const formContenaire= _("formContenaire");
 
         displayfrom.addEventListener("click", showform)
+
+        forRegister.addEventListener("click", () =>{
+            forLOgin.classList.remove("active");
+            forRegister.classList.add("active");
+            if(Registerform.classList.contains("toggleForm")){
+                formContenaire.style.transform = "translate(-100%)";
+                formContenaire.style.transition = "transform .5s";
+                Registerform.classList.remove("toggleForm");
+                loginform.classList.add("toggleForm");
+            }
+        });
 
 
         function _(e) {
