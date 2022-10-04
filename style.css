@@ -51,6 +51,45 @@ nav ul li a {
     color: #94f7e6;
     font-size: 16px;
 }
+a.btn{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style:italic;
+    margin-top: 0;
+    background-color: transparent;
+    color: #94f7e6;
+    border: 1px solid transparent;
+    transition: border-color .4s;
+    text-decoration: none;
+}
+
+.point{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a.btn:hover{
+    border-color: #94f7e6;
+
+}
+
+a.btn{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style:italic;
+    margin-top: 0;
+    background-color: transparent;
+    color: #94f7e6;
+    border: 1px solid transparent;
+    transition: border-color .4s;
+}
+a.btn:hover{
+    border-color: #94f7e6;
+
+}
+
 button.btn{
     padding: 10px 20px;
     font-size: 1.2rem;

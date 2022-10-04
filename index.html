@@ -12,13 +12,13 @@
         <nav>
             <a href="#" class="logo">coding</a>
             <ul>
-                <li><a href="#">Lien 1</a></li>
-                <li><a href="#">Lien 2</a></li>
-                <li><a href="#">Lien 3</a></li>
-                <li><a href="#">Lien 4</a></li>
+                <li><a href="#">_____</a></li>
+                <li><a href="#">_____</a></li>
+                <li><a href="#">_____</a></li>
                 <li>
                     <button class="btn" id="displayfrom">Se connecté</button>
                 </li>
+                <li><a href="#" class="toggleForm" id="acced">accées au cite</a></li>
             </ul>
         </nav>
 
@@ -32,15 +32,15 @@
                         </div>
                         <div class="card-body" id="formContenaire">
                             <form id="formLogin">
-                                <input type="text" class="form-control" placeholder="@utilisateur">
-                                <input type="text" class="form-control" placeholder="@motdepasse">
-                                <button class="formButton">Connexion</button>
+                                <input type="text" class="form-control" placeholder="@utilisateur" id="identifient_connexion">
+                                <input type="text" class="form-control" placeholder="@motdepasse" id="motdepasse_connexion">
+                                <li class="point"><a href="#" id="buttonConnexion" class="btn formButton">connexion</a></li>
                             </form>
                             <form id="formRegister" class="toggleForm">
                                 <input type="text" class="form-control" placeholder="@utilisateur">
                                 <input type="text" class="form-control" placeholder="@motdepasse">
                                 <input type="text" class="form-control" placeholder="@Cmotdepasse">
-                                <button class="formButton">Inscription</button>
+                                <li class="point"><a href="#" id="buttonConnexion" class="btn formButton">s'inscrire</a></li>
                             </form>
                         </div>
                     </div>
@@ -56,6 +56,7 @@
         const forRegister = _("forRegister");
         const Registerform= _("formRegister");
         const formContenaire= _("formContenaire");
+        const acced = _("acced")
 
         displayfrom.addEventListener("click", showform)
 
@@ -89,6 +90,27 @@
         function showform(){
             document.querySelector(".form-wrapper .card").classList.toggle("show")
         }
+
+        function recup_info(){
+            var saisie_idenifient = document.querySelector("#identifient_connexion").value;
+            var saisie_motdepasse = document.querySelector("#motdepasse_connexion").value;
+
+            console.log(saisie_idenifient, saisie_motdepasse)
+
+            if(saisie_idenifient == "test"){
+                if(saisie_motdepasse == "159"){
+                    acced.classList.remove("toggleForm")
+                }
+                else{
+                    acced.classList.add("toggleForm")
+                }
+            }
+            else{
+                acced.classList.add("toggleForm")
+            }
+        }
+
+        document.querySelector("#buttonConnexion").addEventListener("click", recup_info)
 
     </script>
 </body>
