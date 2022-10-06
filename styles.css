@@ -244,9 +244,9 @@ form{
 
 
 
-.vue{
+/* .vue{
     background: rgba(82, 139, 255);
-}
+} */
 
 .res-contenaire{
     background: rgb(0 0 0 /35%);
@@ -257,6 +257,13 @@ form{
     position: absolute;
     left: 22%;
     top: 20%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.res-contenaire.show{
+    visibility: visible;
+    opacity: 1;
 }
 
 .titre{
@@ -266,8 +273,8 @@ form{
     margin: 40px 20px 30px 20px ;
     color: #94f7e6;
 }
-.instagrame,
-.facebook{
+.facebook,
+.instagrame{
     margin: 10px 5px 10px 5px;
     padding: 5px;
     height: 30%;
@@ -291,4 +298,8 @@ h3{
     width: 30px;
     color: #94f7e6;
     margin-top: 20px;
+}
+.vis.show{
+    visibility: visible;
+    opacity: 1;
 }
