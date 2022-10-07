@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat_style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenaire">
+        <div class="chat-global">
+
+            <div class="nav-top">
+                <div class="location" id="buttonback">
+                    <img src="../../assets/first-page-resource/chat/left-chevron.svg" class="pointer">
+                    <p class="pointer">Back</p>
+                </div>
+
+                <div class="utilisateur">
+                    <p>John Doe</p>
+                    <p>Active Now</p>
+                </div>
+
+                <div class="logos-call">
+                    <img src="../../assets/first-page-resource/chat/phone.svg" class="pointer">
+                    <img src="../../assets/first-page-resource/chat/video-camera.svg" class="pointer">
+                </div>
+            </div>
+
+            <div class="conversation">
+                <div class="talk left">
+                    <img src="../../assets/first-page-resource/chat/avatar2.jpg">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="talk right">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <img src="../../assets/first-page-resource/chat/avatar1.jpg">
+                </div>
+                <div class="talk left">
+                    <img src="../../assets/first-page-resource/chat/avatar2.jpg">
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="talk right">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <img src="../../assets/first-page-resource/chat/avatar1.jpg">
+                </div>
+        </div>
+
+
+        <form class="chat-form">
+
+            <div class="container-inputs-stuffs">
+
+                <div class="files-logo-cont">
+                    <img src="../../assets/first-page-resource/chat/paperclip.svg" class="pointer">
+                </div>
+
+                <div class="group-inp">
+                    <textarea placeholder="Enter your message here" minlength="1" maxlength="1500"></textarea>
+                    <img src="../../assets/first-page-resource/chat/smile.svg" class="pointer">
+                </div>
+
+
+                <button class="submit-msg-btn">
+                    <img src="../../assets/first-page-resource/chat/send.svg" class="pointer">
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+
+        const buttonchat = _("buttonchat")
+        const buttonback = _("buttonback")
+
+        buttonchat.addEventListener("click", afchat)
+        buttonback.addEventListener("click", bback)
+
+        function bback() {
+            document.querySelector(".chat-global").classList.remove("show")
+        }
+
+        function afchat() {
+            document.querySelector(".chat-global").classList.toggle("show")
+        }
+
+        function _(e) {
+            return document.getElementById(e);
+        }
+    </script>
+
+</body>
+</html>
