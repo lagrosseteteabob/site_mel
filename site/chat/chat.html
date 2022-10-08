@@ -5,26 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="chat_style.css">
-    <title>Document</title>
+    <title>chat</title>
 </head>
 <body>
     <div class="contenaire">
+        <nav>
+            <a href="#" class="logo">MelVin</a>
+            <ul>
+                <li>
+                    <a href="../site.html">
+                        <button class="btn pointer" >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                              </svg>
+                              <p>Acceuil</p>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="total-chat">
+            <div class="head">
+                <p>Louise Bekers</p>
+            </div>
+            <div class="body">
+                <div class="conv">
+                    <div class="picture">
+                        <img src="../../assets/first-page-resource/chat/avatar2.jpg">
+                    </div>
+                    <div class="name-active" id="firstconv">
+                        <p class="name">John Doe</p>
+                        <p class="active">Active Now</p>
+                    </div>
+                    <div class="logo-call">
+                        <img src="../../assets/first-page-resource/chat/phone.svg">
+                    </div>
+                </div>
+                <div class="conv conv1" id="first-conv">
+                    <div class="picture">
+                        <img src="../../assets/first-page-resource/chat/avatar2.jpg">
+                    </div>
+                    <div class="name-active">
+                        <p class="name">John Doe</p>
+                        <p class="active">Active Now</p>
+                    </div>
+                    <div class="logo-call">
+                        <img src="../../assets/first-page-resource/chat/phone.svg">
+                    </div>
+                </div>
+                <div class="conv conv1" id="first-conv">
+                    <div class="picture">
+                        <img src="../../assets/first-page-resource/chat/avatar2.jpg">
+                    </div>
+                    <div class="name-active">
+                        <p class="name">John Doe</p>
+                        <p class="active">Active Now</p>
+                    </div>
+                    <div class="logo-call">
+                        <img src="../../assets/first-page-resource/chat/phone.svg">
+                    </div>
+                </div>
+                <div class="conv conv1" id="first-conv">
+                    <div class="picture">
+                        <img src="../../assets/first-page-resource/chat/avatar2.jpg">
+                    </div>
+                    <div class="name-active">
+                        <p class="name">John Doe</p>
+                        <p class="active">Active Now</p>
+                    </div>
+                    <div class="logo-call">
+                        <img src="../../assets/first-page-resource/chat/phone.svg">
+                    </div>
+                </div>
+                <div class="conv conv1" id="first-conv">
+                    <div class="picture">
+                        <img src="../../assets/first-page-resource/chat/avatar2.jpg">
+                    </div>
+                    <div class="name-active">
+                        <p class="name">John Doe</p>
+                        <p class="active">Active Now</p>
+                    </div>
+                    <div class="logo-call">
+                        <img src="../../assets/first-page-resource/chat/phone.svg">
+                    </div>
+                </div>
+                <div class="conv conv1" id="first-conv">
+                    <div class="picture">
+                        <img src="../../assets/first-page-resource/chat/avatar2.jpg">
+                    </div>
+                    <div class="name-active">
+                        <p class="name">John Doe</p>
+                        <p class="active">Active Now</p>
+                    </div>
+                    <div class="logo-call">
+                        <img src="../../assets/first-page-resource/chat/phone.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="chat-global">
 
             <div class="nav-top">
                 <div class="location" id="buttonback">
-                    <img src="../../assets/first-page-resource/chat/left-chevron.svg" class="pointer">
-                    <p class="pointer">Back</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-left white" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                      </svg>
+                    <p class="pointer white">Back</p>
                 </div>
 
                 <div class="utilisateur">
-                    <p>John Doe</p>
-                    <p>Active Now</p>
+                    <p class="white">John Doe</p>
+                    <p class="white">Active Now</p>
                 </div>
 
-                <div class="logos-call">
-                    <img src="../../assets/first-page-resource/chat/phone.svg" class="pointer">
-                    <img src="../../assets/first-page-resource/chat/video-camera.svg" class="pointer">
+                <div class="logos-call white">
+                    <svg xmlns="http://www.w3.org/2000/svg"fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg"fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
+                      </svg>
                 </div>
             </div>
 
@@ -53,17 +154,24 @@
             <div class="container-inputs-stuffs">
 
                 <div class="files-logo-cont">
-                    <img src="../../assets/first-page-resource/chat/paperclip.svg" class="pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-paperclip white" viewBox="0 0 16 16">
+                        <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                      </svg>
                 </div>
 
                 <div class="group-inp">
                     <textarea placeholder="Enter your message here" minlength="1" maxlength="1500"></textarea>
-                    <img src="../../assets/first-page-resource/chat/smile.svg" class="pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-emoji-smile white" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                      </svg>
                 </div>
 
 
                 <button class="submit-msg-btn">
-                    <img src="../../assets/first-page-resource/chat/send.svg" class="pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-send white" viewBox="0 0 16 16">
+                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                      </svg>
                 </button>
             </div>
         </form>
@@ -71,23 +179,26 @@
 
     <script>
 
-        const buttonchat = _("buttonchat")
-        const buttonback = _("buttonback")
 
-        buttonchat.addEventListener("click", afchat)
+        const buttonback = _("buttonback")
+        const firstconv = _("firstconv")
         buttonback.addEventListener("click", bback)
+        firstconv.addEventListener("click", affirstconv)
+
+        function affirstconv() {
+            document.querySelector(".chat-global").classList.add("show")
+            document.querySelector(".total-chat").classList.add("nshow")
+        }
 
         function bback() {
             document.querySelector(".chat-global").classList.remove("show")
+            document.querySelector(".total-chat").classList.remove("nshow")
         }
-
-        function afchat() {
-            document.querySelector(".chat-global").classList.toggle("show")
-        }
-
         function _(e) {
             return document.getElementById(e);
         }
+
+
     </script>
 
 </body>

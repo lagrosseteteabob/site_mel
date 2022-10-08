@@ -7,8 +7,14 @@
     padding: 0;
     outline: none;
 }
+
+@font-face {
+    font-family: "logo";
+    src: url(../assets/police/Comforter_Brush/ComforterBrush-Regular.ttf);
+}
+
 .contenaire{
-    background: url(../assets/first-page-resource/image/lake.jpg) center/cover;
+    background: url(../assets/first-page-resource/image/fd_acceuil.jpg) center/cover;
     position: relative;
     height: 100vh;
     width: 100%;
